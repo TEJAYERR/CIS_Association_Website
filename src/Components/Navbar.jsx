@@ -47,7 +47,7 @@ const Navbar = ({isDark, setIsDark}) => {
                             <Link to={link.link}>{link.name}</Link>
                         </li>
                     ))} 
-                    <X onClick={() => setDisplay(!display)} className='cursor-pointer' />
+                    <X onClick={() => setDisplay(!display)} size={17} className='cursor-pointer' />
                 </ul> : null
             }
             <button onClick={() => setDisplay(!display)} className='cursor-pointer'>{display ? <X size={17} /> : <Menu size={17} />}</button>
